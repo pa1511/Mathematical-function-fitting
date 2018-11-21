@@ -34,7 +34,7 @@ public class LinearSystemParameterDetection {
 		DoubleUnaryOperator linearFunction = LinearFitting.linearFit(systemMatrix); 
 				
 		//Start UI
-		SimpleGraph graph = new SimpleGraph(4,4);
+		SimpleGraph graph = new SimpleGraph(10,10);
 		graph.addFunction(linearFunction, Color.BLUE);
 		for(double[] row:systemMatrix){
 			graph.addPoint(row[0], row[1]);

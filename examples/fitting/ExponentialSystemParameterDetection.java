@@ -34,7 +34,7 @@ public class ExponentialSystemParameterDetection {
 		DoubleUnaryOperator exponentialFunction = ExponentialFitting.expFit1(systemMatrix);
 				
 		//Start UI
-		SimpleGraph graph = new SimpleGraph(4,4);
+		SimpleGraph graph = new SimpleGraph(10,10);
 		graph.addFunction(exponentialFunction, Color.BLUE);
 		for(double[] row:systemMatrix){
 			graph.addPoint(row[0], row[1]);
